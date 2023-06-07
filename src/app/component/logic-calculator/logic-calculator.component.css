@@ -1,0 +1,102 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    padding-right: 30px;
+    padding-left: 30px;
+    
+}
+.calculator-main{
+    margin-left: 404px;
+    background: #f1f1f1;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 7px;
+}
+.interest-type{
+    font-weight: bold;
+}
+.calculator-heading{
+    background: black;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.calculator-content1, .calculator-content2{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.principle-heading, .rate-heading, .time-heading{
+    font-weight: bold;
+}
+.principle-input, .rate-input, .time-input{
+    background: inherit;
+    border: none;
+    border-bottom: 0.5px solid;
+    margin-bottom: 30px;
+    outline: none;
+}
+.fields1, .fields2, .fields3{
+    margin-right: 30px;
+}
+.calculator-button{
+    text-align: center;
+}
+.cal-btn{
+    background: black;
+    color: white;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 22px;
+    cursor: pointer;
+    margin-bottom: 22px;
+}
+.time-dropdown{
+    background: inherit;
+    height: 40px;
+    margin-top: -6px;
+    width: 174px;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+}
+.choose{
+    text-align: center;
+    margin-bottom: 41px;
+}
+.interest-choosing{
+    padding: 7px;
+    background: inherit;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.results{
+    border-top: 0.5px solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100px;
+}
+.results span{
+    /* visibility: hidden; */
+}
+
+@media screen and (max-width: 400px){
+    .calculator-main{
+        margin-left: 0px;
+    }
+    .container{
+        padding-left: 0px;
+        position: relative;
+        left: -24px;
+        margin-top: 180px;
+    }
+}

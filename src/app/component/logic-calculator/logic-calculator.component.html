@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator-main">
+            <div>
+                <h1 class="calculator-heading">Calculator</h1>
+                <div class="choose">
+                    <label for="" class="interest-type">Select Interest Type</label><br>
+                    <select name="" id="" class="interest-choosing" [(ngModel)]="type" required>
+                        <option value="Simple Interest">Simple Interest</option>
+                        <option value="Compound Interest">Compound Interest</option>
+                    </select>
+                </div>
+                <div class="calculator-content1">
+                    <div class="fields1">
+                        <label for="principle" class="principle-heading">Principle</label><br>
+                        <input type="text" [(ngModel)]="principle" class="principle-input" required>
+
+                    </div>
+                    <div class="fields2">
+                        <label for="rate" class="rate-heading">Rate</label><br>
+                        <input type="text" [(ngModel)]="rate" class="rate-input" required>
+                    </div>
+                </div>
+                <div class="calculator-content2">
+                    <div class="fields3">
+                        <label for="time" class="time-heading">Time</label><br>
+                    <input type="text" [(ngModel)]="time" class="time-input" required>
+                    </div>
+
+                    <select class="time-dropdown" [(ngModel)]="duration" required>
+                        <option value="">Select</option>
+                        <option value="Year">Year</option>
+                        <option value="Month">Month</option>
+                        <option value="Day">Day</option>
+                    </select>
+                </div>
+                <div class="calculator-button">
+                    <button class="cal-btn" (click)="handleSubmit()">Calculate</button>
+                </div>
+
+                <div class="results">
+                    <h1>Result</h1>
+                    <span [hidden]="!isVisible">{{typeInput}}: {{total}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
